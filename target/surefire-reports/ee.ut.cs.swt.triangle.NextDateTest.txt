@@ -1,0 +1,40 @@
+-------------------------------------------------------------------------------
+Test set: ee.ut.cs.swt.triangle.NextDateTest
+-------------------------------------------------------------------------------
+Tests run: 40, Failures: 9, Errors: 0, Skipped: 0, Time elapsed: 0.044 sec <<< FAILURE! - in ee.ut.cs.swt.triangle.NextDateTest
+testDecemberToJanuary(ee.ut.cs.swt.triangle.NextDateTest)  Time elapsed: 0.018 sec  <<< FAILURE!
+org.junit.ComparisonFailure: expected:<[Invalid Next Year]> but was:<[12/32/2021]>
+	at ee.ut.cs.swt.triangle.NextDateTest.testDecemberToJanuary(NextDateTest.java:31)
+
+testLeapYear(ee.ut.cs.swt.triangle.NextDateTest)  Time elapsed: 0 sec  <<< FAILURE!
+org.junit.ComparisonFailure: expected:<[2/29]/2004> but was:<[3/1]/2004>
+	at ee.ut.cs.swt.triangle.NextDateTest.testLeapYear(NextDateTest.java:35)
+
+test10(ee.ut.cs.swt.triangle.NextDateTest)  Time elapsed: 0 sec  <<< FAILURE!
+org.junit.ComparisonFailure: expected:<[Invalid Next Year]> but was:<[12/32/2021]>
+	at ee.ut.cs.swt.triangle.NextDateTest.test10(NextDateTest.java:75)
+
+test12(ee.ut.cs.swt.triangle.NextDateTest)  Time elapsed: 0 sec  <<< FAILURE!
+org.junit.ComparisonFailure: expected:<[2/29]/2000> but was:<[3/1]/2000>
+	at ee.ut.cs.swt.triangle.NextDateTest.test12(NextDateTest.java:83)
+
+test4(ee.ut.cs.swt.triangle.NextDateTest)  Time elapsed: 0 sec  <<< FAILURE!
+org.junit.ComparisonFailure: expected:<1[/1/2021]> but was:<1[2/32/2020]>
+	at ee.ut.cs.swt.triangle.NextDateTest.test4(NextDateTest.java:51)
+
+test6(ee.ut.cs.swt.triangle.NextDateTest)  Time elapsed: 0 sec  <<< FAILURE!
+org.junit.ComparisonFailure: expected:<[3/1/2020]> but was:<[Invalid Input Date]>
+	at ee.ut.cs.swt.triangle.NextDateTest.test6(NextDateTest.java:59)
+
+test8(ee.ut.cs.swt.triangle.NextDateTest)  Time elapsed: 0 sec  <<< FAILURE!
+org.junit.ComparisonFailure: expected:<[2/29]/2016> but was:<[3/1]/2016>
+	at ee.ut.cs.swt.triangle.NextDateTest.test8(NextDateTest.java:67)
+
+testCreatesNextDate7(ee.ut.cs.swt.triangle.NextDateTest)  Time elapsed: 0.001 sec  <<< FAILURE!
+org.junit.ComparisonFailure: expected:<7/[8]/1860> but was:<7/[7]/1860>
+	at ee.ut.cs.swt.triangle.NextDateTest.testCreatesNextDate7(NextDateTest.java:200)
+
+testCreatesNextDate9(ee.ut.cs.swt.triangle.NextDateTest)  Time elapsed: 0 sec  <<< FAILURE!
+org.junit.ComparisonFailure: expected:<[2/29]/1828> but was:<[3/1]/1828>
+	at ee.ut.cs.swt.triangle.NextDateTest.testCreatesNextDate9(NextDateTest.java:214)
+

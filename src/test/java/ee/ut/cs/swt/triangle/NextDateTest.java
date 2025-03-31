@@ -49,7 +49,8 @@ public class NextDateTest {
 	@Test
 	public final void test4(){
 		assertEquals("1/1/2021", trialDate.run(12, 31, 2020));
-	}	@Test
+	}
+	@Test
 	public final void test5(){
 		assertEquals("3/1/2019", trialDate.run(2, 28, 2019));
 	}
@@ -71,7 +72,7 @@ public class NextDateTest {
 	}
 	@Test
 	public final void test10(){
-		assertEquals("invalid Next Year", trialDate.run(12, 31, 2021));
+		assertEquals("Invalid Next Year", trialDate.run(12, 31, 2021));
 	}
 	@Test
 	public final void test11(){
@@ -87,11 +88,11 @@ public class NextDateTest {
 	}
 	@Test
 	public final void test14(){
-		assertEquals("Invalid Input Date", trialDate.run(5, 32, 2021));
+		assertEquals("invalid Input Date", trialDate.run(5, 32, 2021));
 	}
 	@Test
 	public final void test15(){
-		assertEquals("Invalid Input Date", trialDate.run(12, 32, 2020));
+		assertEquals("invalid Input Date", trialDate.run(12, 32, 2020));
 	}
 
 

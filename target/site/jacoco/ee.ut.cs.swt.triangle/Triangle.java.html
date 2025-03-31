@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>Triangle.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">triangle</a> &gt; <a href="index.source.html" class="el_package">ee.ut.cs.swt.triangle</a> &gt; <span class="el_source">Triangle.java</span></div><h1>Triangle.java</h1><pre class="source lang-java linenums">package ee.ut.cs.swt.triangle;
+public class Triangle {
+	private int side1;
+
+	private int side2;
+
+	private int side3;
+
+	private static final String P_EQUILATERAL = &quot;equilateral&quot;;
+
+	private static final String P_ISOSCELES = &quot;isossceles&quot;;
+
+	private static final String P_RIGHTANGLED = &quot;right-angled&quot;;
+
+	private static final String P_SCALENE = &quot;scalene&quot;;
+
+	private static final String P_IMPOSSIBLE = &quot;impossible&quot;;
+
+<span class="nc" id="L19">	public Triangle(int s1, int s2, int s3) {</span>
+<span class="nc" id="L20">		this.side1 = s1;</span>
+<span class="nc" id="L21">		this.side2 = s2;</span>
+<span class="nc" id="L22">		this.side3 = s3;</span>
+<span class="nc" id="L23">	}</span>
+
+	public Triangle setSideLengths(int s1, int s2, int s3) {
+<span class="nc" id="L26">		this.side1 = s1;</span>
+<span class="nc" id="L27">		this.side2 = s2;</span>
+<span class="nc" id="L28">		this.side3 = s3;</span>
+<span class="nc" id="L29">		return this;</span>
+	}
+
+	public String getSideLengths() {
+<span class="nc" id="L33">		return String.valueOf(this.side1) + &quot;,&quot; + this.side2 + &quot;,&quot; + this.side3;</span>
+	}
+
+	public int getPerimeter() {
+<span class="nc" id="L37">		return this.side1 + this.side2 + this.side3;</span>
+	}
+
+	public double getArea() {
+<span class="nc bnc" id="L41" title="All 2 branches missed.">		if (!isImpossible())</span>
+<span class="nc" id="L42">			return Math.sqrt((getPerimeter() /</span>
+					2 * (
+<span class="nc" id="L44">					getPerimeter() / 2 - this.side1) * (</span>
+<span class="nc" id="L45">					getPerimeter() / 2 - this.side2) * (</span>
+<span class="nc" id="L46">					getPerimeter() / 2 - this.side3)));</span>
+<span class="nc" id="L47">		return -1.0D;</span>
+	}
+
+	public String classify() {
+<span class="nc bnc" id="L51" title="All 2 branches missed.">		if (isImpossible())</span>
+<span class="nc" id="L52">			return &quot;impossible&quot;;</span>
+<span class="nc bnc" id="L53" title="All 2 branches missed.">		if (this.side1 == this.side2) {</span>
+<span class="nc bnc" id="L54" title="All 2 branches missed.">			if (this.side2 == this.side3)</span>
+<span class="nc" id="L55">				return &quot;equilateral&quot;;</span>
+<span class="nc" id="L56">			return &quot;isossceles&quot;;</span>
+		}
+<span class="nc bnc" id="L58" title="All 2 branches missed.">		if (isRightAngled())</span>
+<span class="nc" id="L59">			return &quot;right-angled&quot;;</span>
+<span class="nc" id="L60">		return &quot;scalene&quot;;</span>
+	}
+
+	public boolean isIsosceles() {
+<span class="nc bnc" id="L64" title="All 6 branches missed.">		if (this.side1 == this.side2 || this.side2 == this.side3 || this.side1 == this.side3)</span>
+<span class="nc" id="L65">			return true;</span>
+<span class="nc" id="L66">		return false;</span>
+	}
+
+	public boolean isEquilateral() {
+<span class="nc bnc" id="L70" title="All 2 branches missed.">		if (this.side1 == this.side3)</span>
+<span class="nc" id="L71">			return true;</span>
+<span class="nc" id="L72">		return false;</span>
+	}
+
+	public boolean isRightAngled() {
+<span class="nc" id="L76">		int[] sides = {this.side1, this.side2, this.side3};</span>
+<span class="nc" id="L77">		return (sides[2] ==</span>
+<span class="nc bnc" id="L78" title="All 2 branches missed.">				Math.sqrt((sides[0] * sides[0] + sides[1] * sides[1])));</span>
+	}
+
+	public boolean isScalene() {
+<span class="nc bnc" id="L82" title="All 6 branches missed.">		if (this.side1 != this.side2 &amp;&amp; this.side1 != this.side3 &amp;&amp; this.side2 != this.side3)</span>
+<span class="nc" id="L83">			return true;</span>
+<span class="nc" id="L84">		return false;</span>
+	}
+
+	public boolean isImpossible() {
+<span class="nc bnc" id="L88" title="All 6 branches missed.">		if (this.side1 &lt;= 0 || this.side2 &lt;= 0 || this.side3 &lt;= 0)</span>
+<span class="nc" id="L89">			return true;</span>
+<span class="nc" id="L90">		return false;</span>
+
+	}
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.6.202009150832</span></div></body></html>
