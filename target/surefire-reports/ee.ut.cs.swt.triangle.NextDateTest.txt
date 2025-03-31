@@ -1,4 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: ee.ut.cs.swt.triangle.NextDateTest
 -------------------------------------------------------------------------------
-Tests run: 19, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.013 sec - in ee.ut.cs.swt.triangle.NextDateTest
+Tests run: 40, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.031 sec - in ee.ut.cs.swt.triangle.NextDateTest

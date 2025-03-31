@@ -93,9 +93,9 @@ public class NextDate {
 <span class="fc" id="L93">						tomorrowDay = 1;</span>
 <span class="fc" id="L94">						tomorrowMonth = 3;</span>
 <span class="fc" id="L95">					}else return &quot;Invalid Input Date&quot;;</span>
-				}
-				//
-<span class="fc" id="L98">				else return &quot;Invalid Input Date&quot;;</span>
+<span class="pc bpc" id="L96" title="1 of 2 branches missed.">				}else if(day &gt; 29) //invalid input as February will never have more than 29 days</span>
+<span class="fc" id="L97">					return &quot;Invalid Input Date&quot;;</span>
+
 			}
 		}
 		//return the string representing the nextDate, in the form MM/DD/YY
@@ -176,7 +176,7 @@ public class NextDate {
 	private static boolean isLeapYear(int year)
 	{
 <span class="fc bfc" id="L178" title="All 2 branches covered.">		if((year % 100) == 0)</span>
-<span class="fc bfc" id="L179" title="All 2 branches covered.">			return (year % 400) == 0;</span>
+<span class="pc bpc" id="L179" title="1 of 2 branches missed.">			return (year % 400) == 0;</span>
 		else
 <span class="fc bfc" id="L181" title="All 2 branches covered.">			return (year % 4) == 0;</span>
 	}
