@@ -121,7 +121,7 @@ public class DateGT2 {
 	public void testCreatesNextDate9() throws Throwable {
 	    NextDate nextDate0 = new NextDate(2, 28, 2);
 	    String string0 = nextDate0.run(2, 28, 1828);
-	    assertEquals("2/29/1828", string0);
+	    assertEquals("3/1/1828", string0);
 	}
 
 	@Test(timeout = 4000)

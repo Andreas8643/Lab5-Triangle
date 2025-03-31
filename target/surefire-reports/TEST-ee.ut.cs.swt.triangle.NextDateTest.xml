@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="ee.ut.cs.swt.triangle.NextDateTest" time="0.044" tests="40" errors="0" skipped="0" failures="9">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="ee.ut.cs.swt.triangle.NextDateTest" time="0.013" tests="19" errors="0" skipped="0" failures="0">
   <properties>
     <property name="idea.version" value="2023.3.4"/>
     <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
@@ -65,80 +65,23 @@
     <property name="sun.stdout.encoding" value="UTF-8"/>
     <property name="sun.cpu.isalist" value="amd64"/>
   </properties>
-  <testcase name="testDecemberToJanuary" classname="ee.ut.cs.swt.triangle.NextDateTest" time="0.018">
-    <failure message="expected:&lt;[Invalid Next Year]&gt; but was:&lt;[12/32/2021]&gt;" type="org.junit.ComparisonFailure"><![CDATA[org.junit.ComparisonFailure: expected:<[Invalid Next Year]> but was:<[12/32/2021]>
-	at ee.ut.cs.swt.triangle.NextDateTest.testDecemberToJanuary(NextDateTest.java:31)
-]]></failure>
-  </testcase>
-  <testcase name="testLeapYear" classname="ee.ut.cs.swt.triangle.NextDateTest" time="0">
-    <failure message="expected:&lt;[2/29]/2004&gt; but was:&lt;[3/1]/2004&gt;" type="org.junit.ComparisonFailure"><![CDATA[org.junit.ComparisonFailure: expected:<[2/29]/2004> but was:<[3/1]/2004>
-	at ee.ut.cs.swt.triangle.NextDateTest.testLeapYear(NextDateTest.java:35)
-]]></failure>
-  </testcase>
-  <testcase name="testRunWithNegativeAndNegative" classname="ee.ut.cs.swt.triangle.NextDateTest" time="0.002"/>
-  <testcase name="test10" classname="ee.ut.cs.swt.triangle.NextDateTest" time="0">
-    <failure message="expected:&lt;[Invalid Next Year]&gt; but was:&lt;[12/32/2021]&gt;" type="org.junit.ComparisonFailure"><![CDATA[org.junit.ComparisonFailure: expected:<[Invalid Next Year]> but was:<[12/32/2021]>
-	at ee.ut.cs.swt.triangle.NextDateTest.test10(NextDateTest.java:75)
-]]></failure>
-  </testcase>
-  <testcase name="test11" classname="ee.ut.cs.swt.triangle.NextDateTest" time="0.001"/>
-  <testcase name="test12" classname="ee.ut.cs.swt.triangle.NextDateTest" time="0">
-    <failure message="expected:&lt;[2/29]/2000&gt; but was:&lt;[3/1]/2000&gt;" type="org.junit.ComparisonFailure"><![CDATA[org.junit.ComparisonFailure: expected:<[2/29]/2000> but was:<[3/1]/2000>
-	at ee.ut.cs.swt.triangle.NextDateTest.test12(NextDateTest.java:83)
-]]></failure>
-  </testcase>
+  <testcase name="testDecemberToJanuary" classname="ee.ut.cs.swt.triangle.NextDateTest" time="0"/>
+  <testcase name="testLeapYear" classname="ee.ut.cs.swt.triangle.NextDateTest" time="0.007"/>
+  <testcase name="test10" classname="ee.ut.cs.swt.triangle.NextDateTest" time="0"/>
+  <testcase name="test11" classname="ee.ut.cs.swt.triangle.NextDateTest" time="0"/>
+  <testcase name="test12" classname="ee.ut.cs.swt.triangle.NextDateTest" time="0"/>
   <testcase name="test13" classname="ee.ut.cs.swt.triangle.NextDateTest" time="0"/>
-  <testcase name="test14" classname="ee.ut.cs.swt.triangle.NextDateTest" time="0"/>
+  <testcase name="test14" classname="ee.ut.cs.swt.triangle.NextDateTest" time="0.001"/>
   <testcase name="test15" classname="ee.ut.cs.swt.triangle.NextDateTest" time="0"/>
   <testcase name="testJuneToJuly" classname="ee.ut.cs.swt.triangle.NextDateTest" time="0"/>
-  <testcase name="testRunReturningNonEmptyString" classname="ee.ut.cs.swt.triangle.NextDateTest" time="0.004"/>
-  <testcase name="test1" classname="ee.ut.cs.swt.triangle.NextDateTest" time="0.001"/>
-  <testcase name="test2" classname="ee.ut.cs.swt.triangle.NextDateTest" time="0"/>
+  <testcase name="test1" classname="ee.ut.cs.swt.triangle.NextDateTest" time="0"/>
+  <testcase name="test2" classname="ee.ut.cs.swt.triangle.NextDateTest" time="0.001"/>
   <testcase name="test3" classname="ee.ut.cs.swt.triangle.NextDateTest" time="0"/>
-  <testcase name="test4" classname="ee.ut.cs.swt.triangle.NextDateTest" time="0">
-    <failure message="expected:&lt;1[/1/2021]&gt; but was:&lt;1[2/32/2020]&gt;" type="org.junit.ComparisonFailure"><![CDATA[org.junit.ComparisonFailure: expected:<1[/1/2021]> but was:<1[2/32/2020]>
-	at ee.ut.cs.swt.triangle.NextDateTest.test4(NextDateTest.java:51)
-]]></failure>
-  </testcase>
-  <testcase name="test5" classname="ee.ut.cs.swt.triangle.NextDateTest" time="0.001"/>
-  <testcase name="test6" classname="ee.ut.cs.swt.triangle.NextDateTest" time="0">
-    <failure message="expected:&lt;[3/1/2020]&gt; but was:&lt;[Invalid Input Date]&gt;" type="org.junit.ComparisonFailure"><![CDATA[org.junit.ComparisonFailure: expected:<[3/1/2020]> but was:<[Invalid Input Date]>
-	at ee.ut.cs.swt.triangle.NextDateTest.test6(NextDateTest.java:59)
-]]></failure>
-  </testcase>
+  <testcase name="test4" classname="ee.ut.cs.swt.triangle.NextDateTest" time="0"/>
+  <testcase name="test5" classname="ee.ut.cs.swt.triangle.NextDateTest" time="0"/>
+  <testcase name="test6" classname="ee.ut.cs.swt.triangle.NextDateTest" time="0"/>
   <testcase name="test7" classname="ee.ut.cs.swt.triangle.NextDateTest" time="0"/>
-  <testcase name="test8" classname="ee.ut.cs.swt.triangle.NextDateTest" time="0">
-    <failure message="expected:&lt;[2/29]/2016&gt; but was:&lt;[3/1]/2016&gt;" type="org.junit.ComparisonFailure"><![CDATA[org.junit.ComparisonFailure: expected:<[2/29]/2016> but was:<[3/1]/2016>
-	at ee.ut.cs.swt.triangle.NextDateTest.test8(NextDateTest.java:67)
-]]></failure>
-  </testcase>
+  <testcase name="test8" classname="ee.ut.cs.swt.triangle.NextDateTest" time="0"/>
   <testcase name="test9" classname="ee.ut.cs.swt.triangle.NextDateTest" time="0"/>
-  <testcase name="testRunWithPositive0" classname="ee.ut.cs.swt.triangle.NextDateTest" time="0.001"/>
-  <testcase name="testRunWithPositive1" classname="ee.ut.cs.swt.triangle.NextDateTest" time="0.001"/>
-  <testcase name="testRunWithPositive2" classname="ee.ut.cs.swt.triangle.NextDateTest" time="0"/>
-  <testcase name="testCreatesNextDate0" classname="ee.ut.cs.swt.triangle.NextDateTest" time="0.001"/>
-  <testcase name="testCreatesNextDate1" classname="ee.ut.cs.swt.triangle.NextDateTest" time="0"/>
-  <testcase name="testCreatesNextDate2" classname="ee.ut.cs.swt.triangle.NextDateTest" time="0.001"/>
-  <testcase name="testCreatesNextDate3" classname="ee.ut.cs.swt.triangle.NextDateTest" time="0.001"/>
-  <testcase name="testCreatesNextDate4" classname="ee.ut.cs.swt.triangle.NextDateTest" time="0"/>
-  <testcase name="testCreatesNextDate5" classname="ee.ut.cs.swt.triangle.NextDateTest" time="0.001"/>
-  <testcase name="testCreatesNextDate6" classname="ee.ut.cs.swt.triangle.NextDateTest" time="0"/>
-  <testcase name="testCreatesNextDate7" classname="ee.ut.cs.swt.triangle.NextDateTest" time="0.001">
-    <failure message="expected:&lt;7/[8]/1860&gt; but was:&lt;7/[7]/1860&gt;" type="org.junit.ComparisonFailure"><![CDATA[org.junit.ComparisonFailure: expected:<7/[8]/1860> but was:<7/[7]/1860>
-	at ee.ut.cs.swt.triangle.NextDateTest.testCreatesNextDate7(NextDateTest.java:200)
-]]></failure>
-  </testcase>
-  <testcase name="testCreatesNextDate8" classname="ee.ut.cs.swt.triangle.NextDateTest" time="0.001"/>
-  <testcase name="testCreatesNextDate9" classname="ee.ut.cs.swt.triangle.NextDateTest" time="0">
-    <failure message="expected:&lt;[2/29]/1828&gt; but was:&lt;[3/1]/1828&gt;" type="org.junit.ComparisonFailure"><![CDATA[org.junit.ComparisonFailure: expected:<[2/29]/1828> but was:<[3/1]/1828>
-	at ee.ut.cs.swt.triangle.NextDateTest.testCreatesNextDate9(NextDateTest.java:214)
-]]></failure>
-  </testcase>
-  <testcase name="testCreatesNextDate10" classname="ee.ut.cs.swt.triangle.NextDateTest" time="0.001"/>
-  <testcase name="testCreatesNextDate11" classname="ee.ut.cs.swt.triangle.NextDateTest" time="0.001"/>
-  <testcase name="testCreatesNextDate12" classname="ee.ut.cs.swt.triangle.NextDateTest" time="0"/>
-  <testcase name="testCreatesNextDate13" classname="ee.ut.cs.swt.triangle.NextDateTest" time="0.001"/>
-  <testcase name="testCreatesNextDate14" classname="ee.ut.cs.swt.triangle.NextDateTest" time="0"/>
-  <testcase name="testRunWithZero" classname="ee.ut.cs.swt.triangle.NextDateTest" time="0"/>
-  <testcase name="testMarchToApril" classname="ee.ut.cs.swt.triangle.NextDateTest" time="0.001"/>
+  <testcase name="testMarchToApril" classname="ee.ut.cs.swt.triangle.NextDateTest" time="0"/>
 </testsuite>
